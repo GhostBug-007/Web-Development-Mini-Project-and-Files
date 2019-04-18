@@ -1,0 +1,45 @@
+<html>
+    <head>
+        <style>
+            .ml15 {
+                font-weight: 800;
+                font-size: 3.8em;
+                text-transform: uppercase;
+                letter-spacing: 0.5em;
+            }
+
+            .ml15 .word {
+                display: inline-block;
+                line-height: 1em;
+            }
+        </style>
+    </head>
+    <body>
+        <h1 class="ml15" style="text-align:center; margin-top:300px">
+            <span class="word">Hack</span>
+            <span class="word">BMU</span>
+            <span class="word">2.0</span>
+        </h1>
+          
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/animejs/2.0.2/anime.min.js"></script>
+        <script>
+            anime.timeline({loop: true})
+                .add({
+                    targets: '.ml15 .word',
+                    scale: [14,1],
+                    opacity: [0,1],
+                    easing: "easeOutCirc",
+                    duration: 800,
+                    delay: function(el, i) {
+                    return 800 * i;
+                    }
+                }).add({
+                    targets: '.ml15',
+                    opacity: 0,
+                    duration: 1000,
+                    easing: "easeOutExpo",
+                    delay: 1000
+                });
+        </script>
+    </body>
+</html>

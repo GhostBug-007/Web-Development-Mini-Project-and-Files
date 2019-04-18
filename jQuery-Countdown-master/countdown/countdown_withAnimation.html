@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Countdown</title>
+	<link rel="stylesheet" type="text/css" href="jquery.countdown.css">
+	<style>
+	.countSeconds{
+		/*display: none;*/
+	}
+	.span .countDiv .countDiv2{
+		display: none;
+	}
+</style>
+<!--  -->
+</head>
+<body>
+
+	<div id="countdown"></div>
+
+	<p id="note"></p>
+
+
+
+	<script
+  src="https://code.jquery.com/jquery-3.3.1.min.js"
+  integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8="
+  crossorigin="anonymous"></script>
+  <script src="jquery.countdown.js"></script>
+
+  <script>
+
+  	$(function(){
+  		var note = $('#note'),
+  			ts = new Date("February 8, 2019 12:00:00"),
+  			newYear = true ;
+
+  		if((new Date()) > ts){
+  			ts= (new Date()).getTime() + 10*24*60*60*1000; 
+  			newYear= false;
+
+  		 }
+
+  		 $('#countdown').countdown({
+  		 	timestamp: ts ,
+  		 	callback : function(days, hours , minutes,seconds){
+  		 		var message = "" ;
+  		 		message += days + "day" + (days == 1 ? '' : 's') + ", " ;
+  		 		message += hours + "hour" + (hours == 1 ? '' : 's') + ", " ;
+  		 		message += minutes  + "minute" + (minutes == 1 ? '' : 's') + ", " ;
+  		 		message += seconds + "second" + (seconds == 1 ? '' : 's') + "</br> " ; 
+
+  		 		if (newYear){
+  		 			message += "left until the new year !" ;
+  		 		}
+  		 		else{
+  		 			message += "left to 10 days from now !" ;
+  		 		}
+  		 		note.html(message) ;
+
+
+
+  		 	}
+
+  		 });
+  	});
+
+	</script>
+</body>
+</html>

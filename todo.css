@@ -1,0 +1,13 @@
+/**{
+	color:orange;
+}
+li strong{
+	border: 1px solid green ;
+}*/
+ul+ol{
+	background: pink;
+}
+
+/*li:nth-of-type(2){
+	color:lime;
+}*/

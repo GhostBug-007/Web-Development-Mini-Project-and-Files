@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Sponsers_mobile</title>
+	<link rel="stylesheet" type="text/css" href="hackbmu_mobile.css">
+	<link href="https://fonts.googleapis.com/css?family=Charmonman" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/css?family=IBM+Plex+Mono:400i,600i,700i" rel="stylesheet">
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+</head>
+<body>
+<!-- <h1>Prateek/Singhal</h1> -->
+<div class="pastSponser_bodycont">
+<!-- <h3>Massimo Margagnoni</h3> -->
+<div class="pastSponser_imgcont">
+<div class="pastSponser_img pastSponser_hide">  <img src="advantEdge.png" title="advantEdge">  </div>
+<div class="pastSponser_img pastSponser_hide">  <img src="aws.png" title="aws"> </div>
+<div class="pastSponser_img pastSponser_hide">  <img src="balsamiq.png" title="balsamiq"> </div>
+<div class="pastSponser_img pastSponser_hide">  <img src="paytm.png" title="paytm"> </div>
+<div class="pastSponser_img pastSponser_hide">  <img src="chartwell.png"> </div>
+<div class="pastSponser_img pastSponser_hide">  <img src="codingBlocks.png">  </div>
+</div>
+<div class="pastSponser_imgcont">
+<div class="pastSponser_img pastSponser_hide">  <img src="creativeTim.png"> </div>
+<div class="pastSponser_img pastSponser_hide">  <img src="digitalOcean.png"> </div>
+<div class="pastSponser_img">  <img src="geeksforGeeks.png"> </div>
+<div class="pastSponser_img">  <img src="gitlab.png"> </div>
+<div class="pastSponser_img">  <img src="i3Indiya.png"> </div>
+<div class="pastSponser_img">  <img src="incuspaze.png"> </div>
+</div>
+<div class="pastSponser_imgcont">
+<div class="pastSponser_img">  <img src="inkMonk.png"> </div>
+<div class="pastSponser_img">  <img src="jetBrains.png"> </div>
+<div class="pastSponser_img">  <img src="lbf.png"> </div>
+<div class="pastSponser_img">  <img src="majorLeagueH.png"> </div>
+<div class="pastSponser_img">  <img src="bugsee.png"> </div>
+<div class="pastSponser_img">  <img src="sketch.png"> </div>
+</div>
+<div class="pastSponser_imgcont">
+<div class="pastSponser_img">  <img src="tekSystems.png"> </div>
+<div class="pastSponser_img">  <img src="temboo.png"> </div>
+<div class="pastSponser_img">  <img src="uploadCare.png"> </div>
+<div class="pastSponser_img">  <img src="wolfram.png"> </div>
+<div class="pastSponser_img">  <img src="znet.png"> </div>
+<div class="pastSponser_img">  <img src="hackster.png"> </div>
+</div>
+<div class="pastSponser_imgcont">
+	<div class="pastSponser_img">  <img src="challengeRocket.png"> </div>
+	<div class="pastSponser_img">  <img src="womenWhoCode.png"> </div>
+	<div class="pastSponser_img">  <img src="nikoin.png"> </div>
+	<div class="pastSponser_img">  <img src="twillo.png"> </div>
+	<div class="pastSponser_img">  <img src="hacksociety.png"> </div>
+	<div class="pastSponser_img">  <img src="freestand.png"> </div>
+</div>
+<!-- <div class="pastSponser_imgcont">
+	
+</div> -->
+<div class="pastSponser_imgcont">
+	<div class="pastSponser_img">  <img src="smartedge.png"> </div>
+	<div class="pastSponser_img">  <img src="womenTech.png"> </div>
+	<div class="pastSponser_img abc">  <img src="institutionEAT.png"> </div>
+</div>
+
+<div class="pastSponser_btn" id="pastSponser_BTN">
+	<button class="btn" onclick="myFunction()">Show More</button>	
+</div>
+<div class="pastSponser_btn" id="pastSponser_BTN_hide">
+	<button class="pastSponser_btn" onclick="hideSponser()">Show Less</button>
+</div>
+
+
+<!-- <img src="" -->
+<!-- <img src="" -->
+<!-- <img src="" -->
+
+</div>
+<div >
+	
+	</div>
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+	<script>
+		function myFunction() {
+			var x =document.getElementsByClassName("pastSponser_img");
+			console.log(x);
+			var i;
+			for(i=0;i<x.length;i++) {
+				x[i].style.display = "block";	
+			}
+			document.getElementById("pastSponser_BTN").style.display="none";
+			document.getElementById("pastSponser_BTN_hide").style.display="block";
+		}
+		function hideSponser(){
+			var x =document.getElementsByClassName("pastSponser_img");
+			// console.log(x);
+			var i;
+			for(i=0;i<x.length;i++) {
+				x[i].style.display = "none";	
+			}
+			var x =document.getElementsByClassName("pastSponser_hide");
+			// console.log(x);
+			var i;
+			for(i=0;i<x.length;i++) {
+				x[i].style.display = "block";	
+			}
+			document.getElementById("pastSponser_BTN").style.display="block";
+			document.getElementById("pastSponser_BTN_hide").style.display="none";
+		}		
+	</script>
+</body>
+</html>	

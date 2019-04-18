@@ -1,0 +1,55 @@
+img{
+	width: 100%;
+	height: 100%;
+}
+.pastSponser_bodycont{
+	/*background: #F2F0E9;*/
+	padding:50px 150px;
+	margin-bottom: 100px;
+}
+
+.pastSponser_imgcont{
+	padding-top: 20px;
+	padding-bottom:20px;
+}
+
+/*h1{
+	margin:1.66%;
+	width:30%;
+	border-bottom:3px solid #f1f1f1;
+	text-transform:uppercase;
+	font-family: 'IBM Plex Mono', monospace;
+	font-weight:200;
+}*/
+.pastSponser_img {
+    /*padding: 50px;*/
+    /*background-color: green;*/
+    transition: transform .2s; /* Animation */
+    /*width: 200px;*/
+    /*height: 200px;*/
+    /*margin: 0 auto;*/
+}
+
+
+.pastSponser_img{
+	padding:10px;
+	width:125px;
+	float:left;
+	margin: 10px;
+	/*border:1px solid grey ;*/
+	border-radius:10%;	
+	min-width: 80px;
+	min-height: 62px;
+}
+.pastSponser_img:hover{
+	box-shadow: 0px 0px 15px #d1ccca;
+	 transform: scale(1.05);
+	/*opacity: 0.2;*/
+	/*background: :blue;*/
+	/*border-radius:30%;*/
+}
+/*h3{
+	margin:1.5%;
+	margin-bottom: 0.15%;
+	font-family: 'Charmonman', cursive;;
+}
